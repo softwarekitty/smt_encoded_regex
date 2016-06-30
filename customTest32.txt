@@ -1,0 +1,506 @@
+(declare-const LENGTH Int)(assert (= LENGTH 32))
+(declare-const ERROR Int)(assert (= ERROR 2147483647))
+(define-fun iB ((value Int)) Bool (and (>= value 0) (<= value LENGTH)))
+
+;constant declarations for Ar0
+(declare-const Ar0_0 Int)(declare-const Ar0_1 Int)(declare-const Ar0_2 Int)(declare-const Ar0_3 Int)(declare-const Ar0_4 Int)(declare-const Ar0_5 Int)(declare-const Ar0_6 Int)(declare-const Ar0_7 Int)(declare-const Ar0_8 Int)(declare-const Ar0_9 Int)(declare-const Ar0_10 Int)(declare-const Ar0_11 Int)(declare-const Ar0_12 Int)(declare-const Ar0_13 Int)(declare-const Ar0_14 Int)(declare-const Ar0_15 Int)(declare-const Ar0_16 Int)(declare-const Ar0_17 Int)(declare-const Ar0_18 Int)(declare-const Ar0_19 Int)(declare-const Ar0_20 Int)(declare-const Ar0_21 Int)(declare-const Ar0_22 Int)(declare-const Ar0_23 Int)(declare-const Ar0_24 Int)(declare-const Ar0_25 Int)(declare-const Ar0_26 Int)(declare-const Ar0_27 Int)(declare-const Ar0_28 Int)(declare-const Ar0_29 Int)(declare-const Ar0_30 Int)(declare-const Ar0_31 Int)
+;isInBounds assertions for Ar0
+(assert (and (iB Ar0_0)(iB Ar0_1)(iB Ar0_2)(iB Ar0_3)(iB Ar0_4)(iB Ar0_5)(iB Ar0_6)(iB Ar0_7)(iB Ar0_8)(iB Ar0_9)(iB Ar0_10)(iB Ar0_11)(iB Ar0_12)(iB Ar0_13)(iB Ar0_14)(iB Ar0_15)(iB Ar0_16)(iB Ar0_17)(iB Ar0_18)(iB Ar0_19)(iB Ar0_20)(iB Ar0_21)(iB Ar0_22)(iB Ar0_23)(iB Ar0_24)(iB Ar0_25)(iB Ar0_26)(iB Ar0_27)(iB Ar0_28)(iB Ar0_29)(iB Ar0_30)(iB Ar0_31)))
+;select function for Ar0
+(define-fun s_Ar0 ((i Int)) Int (ite (= i 0) Ar0_0 (ite (= i 1) Ar0_1 (ite (= i 2) Ar0_2 (ite (= i 3) Ar0_3 (ite (= i 4) Ar0_4 (ite (= i 5) Ar0_5 (ite (= i 6) Ar0_6 (ite (= i 7) Ar0_7 (ite (= i 8) Ar0_8 (ite (= i 9) Ar0_9 (ite (= i 10) Ar0_10 (ite (= i 11) Ar0_11 (ite (= i 12) Ar0_12 (ite (= i 13) Ar0_13 (ite (= i 14) Ar0_14 (ite (= i 15) Ar0_15 (ite (= i 16) Ar0_16 (ite (= i 17) Ar0_17 (ite (= i 18) Ar0_18 (ite (= i 19) Ar0_19 (ite (= i 20) Ar0_20 (ite (= i 21) Ar0_21 (ite (= i 22) Ar0_22 (ite (= i 23) Ar0_23 (ite (= i 24) Ar0_24 (ite (= i 25) Ar0_25 (ite (= i 26) Ar0_26 (ite (= i 27) Ar0_27 (ite (= i 28) Ar0_28 (ite (= i 29) Ar0_29 (ite (= i 30) Ar0_30 (ite (= i 31) Ar0_31 ERROR)))))))))))))))))))))))))))))))))
+;arraySum function for Ar0
+(define-fun a_Ar0 ((i Int)) Int (ite (= i 0) 0 (ite (= i 1) Ar0_0 (ite (= i 2)(+ Ar0_0 Ar0_1)(ite (= i 3)(+ Ar0_0 Ar0_1 Ar0_2)(ite (= i 4)(+ Ar0_0 Ar0_1 Ar0_2 Ar0_3)(ite (= i 5)(+ Ar0_0 Ar0_1 Ar0_2 Ar0_3 Ar0_4)(ite (= i 6)(+ Ar0_0 Ar0_1 Ar0_2 Ar0_3 Ar0_4 Ar0_5)(ite (= i 7)(+ Ar0_0 Ar0_1 Ar0_2 Ar0_3 Ar0_4 Ar0_5 Ar0_6)(ite (= i 8)(+ Ar0_0 Ar0_1 Ar0_2 Ar0_3 Ar0_4 Ar0_5 Ar0_6 Ar0_7)(ite (= i 9)(+ Ar0_0 Ar0_1 Ar0_2 Ar0_3 Ar0_4 Ar0_5 Ar0_6 Ar0_7 Ar0_8)(ite (= i 10)(+ Ar0_0 Ar0_1 Ar0_2 Ar0_3 Ar0_4 Ar0_5 Ar0_6 Ar0_7 Ar0_8 Ar0_9)(ite (= i 11)(+ Ar0_0 Ar0_1 Ar0_2 Ar0_3 Ar0_4 Ar0_5 Ar0_6 Ar0_7 Ar0_8 Ar0_9 Ar0_10)(ite (= i 12)(+ Ar0_0 Ar0_1 Ar0_2 Ar0_3 Ar0_4 Ar0_5 Ar0_6 Ar0_7 Ar0_8 Ar0_9 Ar0_10 Ar0_11)(ite (= i 13)(+ Ar0_0 Ar0_1 Ar0_2 Ar0_3 Ar0_4 Ar0_5 Ar0_6 Ar0_7 Ar0_8 Ar0_9 Ar0_10 Ar0_11 Ar0_12)(ite (= i 14)(+ Ar0_0 Ar0_1 Ar0_2 Ar0_3 Ar0_4 Ar0_5 Ar0_6 Ar0_7 Ar0_8 Ar0_9 Ar0_10 Ar0_11 Ar0_12 Ar0_13)(ite (= i 15)(+ Ar0_0 Ar0_1 Ar0_2 Ar0_3 Ar0_4 Ar0_5 Ar0_6 Ar0_7 Ar0_8 Ar0_9 Ar0_10 Ar0_11 Ar0_12 Ar0_13 Ar0_14)(ite (= i 16)(+ Ar0_0 Ar0_1 Ar0_2 Ar0_3 Ar0_4 Ar0_5 Ar0_6 Ar0_7 Ar0_8 Ar0_9 Ar0_10 Ar0_11 Ar0_12 Ar0_13 Ar0_14 Ar0_15)(ite (= i 17)(+ Ar0_0 Ar0_1 Ar0_2 Ar0_3 Ar0_4 Ar0_5 Ar0_6 Ar0_7 Ar0_8 Ar0_9 Ar0_10 Ar0_11 Ar0_12 Ar0_13 Ar0_14 Ar0_15 Ar0_16)(ite (= i 18)(+ Ar0_0 Ar0_1 Ar0_2 Ar0_3 Ar0_4 Ar0_5 Ar0_6 Ar0_7 Ar0_8 Ar0_9 Ar0_10 Ar0_11 Ar0_12 Ar0_13 Ar0_14 Ar0_15 Ar0_16 Ar0_17)(ite (= i 19)(+ Ar0_0 Ar0_1 Ar0_2 Ar0_3 Ar0_4 Ar0_5 Ar0_6 Ar0_7 Ar0_8 Ar0_9 Ar0_10 Ar0_11 Ar0_12 Ar0_13 Ar0_14 Ar0_15 Ar0_16 Ar0_17 Ar0_18)(ite (= i 20)(+ Ar0_0 Ar0_1 Ar0_2 Ar0_3 Ar0_4 Ar0_5 Ar0_6 Ar0_7 Ar0_8 Ar0_9 Ar0_10 Ar0_11 Ar0_12 Ar0_13 Ar0_14 Ar0_15 Ar0_16 Ar0_17 Ar0_18 Ar0_19)(ite (= i 21)(+ Ar0_0 Ar0_1 Ar0_2 Ar0_3 Ar0_4 Ar0_5 Ar0_6 Ar0_7 Ar0_8 Ar0_9 Ar0_10 Ar0_11 Ar0_12 Ar0_13 Ar0_14 Ar0_15 Ar0_16 Ar0_17 Ar0_18 Ar0_19 Ar0_20)(ite (= i 22)(+ Ar0_0 Ar0_1 Ar0_2 Ar0_3 Ar0_4 Ar0_5 Ar0_6 Ar0_7 Ar0_8 Ar0_9 Ar0_10 Ar0_11 Ar0_12 Ar0_13 Ar0_14 Ar0_15 Ar0_16 Ar0_17 Ar0_18 Ar0_19 Ar0_20 Ar0_21)(ite (= i 23)(+ Ar0_0 Ar0_1 Ar0_2 Ar0_3 Ar0_4 Ar0_5 Ar0_6 Ar0_7 Ar0_8 Ar0_9 Ar0_10 Ar0_11 Ar0_12 Ar0_13 Ar0_14 Ar0_15 Ar0_16 Ar0_17 Ar0_18 Ar0_19 Ar0_20 Ar0_21 Ar0_22)(ite (= i 24)(+ Ar0_0 Ar0_1 Ar0_2 Ar0_3 Ar0_4 Ar0_5 Ar0_6 Ar0_7 Ar0_8 Ar0_9 Ar0_10 Ar0_11 Ar0_12 Ar0_13 Ar0_14 Ar0_15 Ar0_16 Ar0_17 Ar0_18 Ar0_19 Ar0_20 Ar0_21 Ar0_22 Ar0_23)(ite (= i 25)(+ Ar0_0 Ar0_1 Ar0_2 Ar0_3 Ar0_4 Ar0_5 Ar0_6 Ar0_7 Ar0_8 Ar0_9 Ar0_10 Ar0_11 Ar0_12 Ar0_13 Ar0_14 Ar0_15 Ar0_16 Ar0_17 Ar0_18 Ar0_19 Ar0_20 Ar0_21 Ar0_22 Ar0_23 Ar0_24)(ite (= i 26)(+ Ar0_0 Ar0_1 Ar0_2 Ar0_3 Ar0_4 Ar0_5 Ar0_6 Ar0_7 Ar0_8 Ar0_9 Ar0_10 Ar0_11 Ar0_12 Ar0_13 Ar0_14 Ar0_15 Ar0_16 Ar0_17 Ar0_18 Ar0_19 Ar0_20 Ar0_21 Ar0_22 Ar0_23 Ar0_24 Ar0_25)(ite (= i 27)(+ Ar0_0 Ar0_1 Ar0_2 Ar0_3 Ar0_4 Ar0_5 Ar0_6 Ar0_7 Ar0_8 Ar0_9 Ar0_10 Ar0_11 Ar0_12 Ar0_13 Ar0_14 Ar0_15 Ar0_16 Ar0_17 Ar0_18 Ar0_19 Ar0_20 Ar0_21 Ar0_22 Ar0_23 Ar0_24 Ar0_25 Ar0_26)(ite (= i 28)(+ Ar0_0 Ar0_1 Ar0_2 Ar0_3 Ar0_4 Ar0_5 Ar0_6 Ar0_7 Ar0_8 Ar0_9 Ar0_10 Ar0_11 Ar0_12 Ar0_13 Ar0_14 Ar0_15 Ar0_16 Ar0_17 Ar0_18 Ar0_19 Ar0_20 Ar0_21 Ar0_22 Ar0_23 Ar0_24 Ar0_25 Ar0_26 Ar0_27)(ite (= i 29)(+ Ar0_0 Ar0_1 Ar0_2 Ar0_3 Ar0_4 Ar0_5 Ar0_6 Ar0_7 Ar0_8 Ar0_9 Ar0_10 Ar0_11 Ar0_12 Ar0_13 Ar0_14 Ar0_15 Ar0_16 Ar0_17 Ar0_18 Ar0_19 Ar0_20 Ar0_21 Ar0_22 Ar0_23 Ar0_24 Ar0_25 Ar0_26 Ar0_27 Ar0_28)(ite (= i 30)(+ Ar0_0 Ar0_1 Ar0_2 Ar0_3 Ar0_4 Ar0_5 Ar0_6 Ar0_7 Ar0_8 Ar0_9 Ar0_10 Ar0_11 Ar0_12 Ar0_13 Ar0_14 Ar0_15 Ar0_16 Ar0_17 Ar0_18 Ar0_19 Ar0_20 Ar0_21 Ar0_22 Ar0_23 Ar0_24 Ar0_25 Ar0_26 Ar0_27 Ar0_28 Ar0_29)(ite (= i 31)(+ Ar0_0 Ar0_1 Ar0_2 Ar0_3 Ar0_4 Ar0_5 Ar0_6 Ar0_7 Ar0_8 Ar0_9 Ar0_10 Ar0_11 Ar0_12 Ar0_13 Ar0_14 Ar0_15 Ar0_16 Ar0_17 Ar0_18 Ar0_19 Ar0_20 Ar0_21 Ar0_22 Ar0_23 Ar0_24 Ar0_25 Ar0_26 Ar0_27 Ar0_28 Ar0_29 Ar0_30)(ite (= i 32)(+ Ar0_0 Ar0_1 Ar0_2 Ar0_3 Ar0_4 Ar0_5 Ar0_6 Ar0_7 Ar0_8 Ar0_9 Ar0_10 Ar0_11 Ar0_12 Ar0_13 Ar0_14 Ar0_15 Ar0_16 Ar0_17 Ar0_18 Ar0_19 Ar0_20 Ar0_21 Ar0_22 Ar0_23 Ar0_24 Ar0_25 Ar0_26 Ar0_27 Ar0_28 Ar0_29 Ar0_30 Ar0_31) ERROR))))))))))))))))))))))))))))))))))
+
+
+;constant declarations for Ar1
+(declare-const Ar1_0 Int)(declare-const Ar1_1 Int)(declare-const Ar1_2 Int)(declare-const Ar1_3 Int)(declare-const Ar1_4 Int)(declare-const Ar1_5 Int)(declare-const Ar1_6 Int)(declare-const Ar1_7 Int)(declare-const Ar1_8 Int)(declare-const Ar1_9 Int)(declare-const Ar1_10 Int)(declare-const Ar1_11 Int)(declare-const Ar1_12 Int)(declare-const Ar1_13 Int)(declare-const Ar1_14 Int)(declare-const Ar1_15 Int)(declare-const Ar1_16 Int)(declare-const Ar1_17 Int)(declare-const Ar1_18 Int)(declare-const Ar1_19 Int)(declare-const Ar1_20 Int)(declare-const Ar1_21 Int)(declare-const Ar1_22 Int)(declare-const Ar1_23 Int)(declare-const Ar1_24 Int)(declare-const Ar1_25 Int)(declare-const Ar1_26 Int)(declare-const Ar1_27 Int)(declare-const Ar1_28 Int)(declare-const Ar1_29 Int)(declare-const Ar1_30 Int)(declare-const Ar1_31 Int)
+;isInBounds assertions for Ar1
+(assert (and (iB Ar1_0)(iB Ar1_1)(iB Ar1_2)(iB Ar1_3)(iB Ar1_4)(iB Ar1_5)(iB Ar1_6)(iB Ar1_7)(iB Ar1_8)(iB Ar1_9)(iB Ar1_10)(iB Ar1_11)(iB Ar1_12)(iB Ar1_13)(iB Ar1_14)(iB Ar1_15)(iB Ar1_16)(iB Ar1_17)(iB Ar1_18)(iB Ar1_19)(iB Ar1_20)(iB Ar1_21)(iB Ar1_22)(iB Ar1_23)(iB Ar1_24)(iB Ar1_25)(iB Ar1_26)(iB Ar1_27)(iB Ar1_28)(iB Ar1_29)(iB Ar1_30)(iB Ar1_31)))
+;select function for Ar1
+(define-fun s_Ar1 ((i Int)) Int (ite (= i 0) Ar1_0 (ite (= i 1) Ar1_1 (ite (= i 2) Ar1_2 (ite (= i 3) Ar1_3 (ite (= i 4) Ar1_4 (ite (= i 5) Ar1_5 (ite (= i 6) Ar1_6 (ite (= i 7) Ar1_7 (ite (= i 8) Ar1_8 (ite (= i 9) Ar1_9 (ite (= i 10) Ar1_10 (ite (= i 11) Ar1_11 (ite (= i 12) Ar1_12 (ite (= i 13) Ar1_13 (ite (= i 14) Ar1_14 (ite (= i 15) Ar1_15 (ite (= i 16) Ar1_16 (ite (= i 17) Ar1_17 (ite (= i 18) Ar1_18 (ite (= i 19) Ar1_19 (ite (= i 20) Ar1_20 (ite (= i 21) Ar1_21 (ite (= i 22) Ar1_22 (ite (= i 23) Ar1_23 (ite (= i 24) Ar1_24 (ite (= i 25) Ar1_25 (ite (= i 26) Ar1_26 (ite (= i 27) Ar1_27 (ite (= i 28) Ar1_28 (ite (= i 29) Ar1_29 (ite (= i 30) Ar1_30 (ite (= i 31) Ar1_31 ERROR)))))))))))))))))))))))))))))))))
+;arraySum function for Ar1
+(define-fun a_Ar1 ((i Int)) Int (ite (= i 0) 0 (ite (= i 1) Ar1_0 (ite (= i 2)(+ Ar1_0 Ar1_1)(ite (= i 3)(+ Ar1_0 Ar1_1 Ar1_2)(ite (= i 4)(+ Ar1_0 Ar1_1 Ar1_2 Ar1_3)(ite (= i 5)(+ Ar1_0 Ar1_1 Ar1_2 Ar1_3 Ar1_4)(ite (= i 6)(+ Ar1_0 Ar1_1 Ar1_2 Ar1_3 Ar1_4 Ar1_5)(ite (= i 7)(+ Ar1_0 Ar1_1 Ar1_2 Ar1_3 Ar1_4 Ar1_5 Ar1_6)(ite (= i 8)(+ Ar1_0 Ar1_1 Ar1_2 Ar1_3 Ar1_4 Ar1_5 Ar1_6 Ar1_7)(ite (= i 9)(+ Ar1_0 Ar1_1 Ar1_2 Ar1_3 Ar1_4 Ar1_5 Ar1_6 Ar1_7 Ar1_8)(ite (= i 10)(+ Ar1_0 Ar1_1 Ar1_2 Ar1_3 Ar1_4 Ar1_5 Ar1_6 Ar1_7 Ar1_8 Ar1_9)(ite (= i 11)(+ Ar1_0 Ar1_1 Ar1_2 Ar1_3 Ar1_4 Ar1_5 Ar1_6 Ar1_7 Ar1_8 Ar1_9 Ar1_10)(ite (= i 12)(+ Ar1_0 Ar1_1 Ar1_2 Ar1_3 Ar1_4 Ar1_5 Ar1_6 Ar1_7 Ar1_8 Ar1_9 Ar1_10 Ar1_11)(ite (= i 13)(+ Ar1_0 Ar1_1 Ar1_2 Ar1_3 Ar1_4 Ar1_5 Ar1_6 Ar1_7 Ar1_8 Ar1_9 Ar1_10 Ar1_11 Ar1_12)(ite (= i 14)(+ Ar1_0 Ar1_1 Ar1_2 Ar1_3 Ar1_4 Ar1_5 Ar1_6 Ar1_7 Ar1_8 Ar1_9 Ar1_10 Ar1_11 Ar1_12 Ar1_13)(ite (= i 15)(+ Ar1_0 Ar1_1 Ar1_2 Ar1_3 Ar1_4 Ar1_5 Ar1_6 Ar1_7 Ar1_8 Ar1_9 Ar1_10 Ar1_11 Ar1_12 Ar1_13 Ar1_14)(ite (= i 16)(+ Ar1_0 Ar1_1 Ar1_2 Ar1_3 Ar1_4 Ar1_5 Ar1_6 Ar1_7 Ar1_8 Ar1_9 Ar1_10 Ar1_11 Ar1_12 Ar1_13 Ar1_14 Ar1_15)(ite (= i 17)(+ Ar1_0 Ar1_1 Ar1_2 Ar1_3 Ar1_4 Ar1_5 Ar1_6 Ar1_7 Ar1_8 Ar1_9 Ar1_10 Ar1_11 Ar1_12 Ar1_13 Ar1_14 Ar1_15 Ar1_16)(ite (= i 18)(+ Ar1_0 Ar1_1 Ar1_2 Ar1_3 Ar1_4 Ar1_5 Ar1_6 Ar1_7 Ar1_8 Ar1_9 Ar1_10 Ar1_11 Ar1_12 Ar1_13 Ar1_14 Ar1_15 Ar1_16 Ar1_17)(ite (= i 19)(+ Ar1_0 Ar1_1 Ar1_2 Ar1_3 Ar1_4 Ar1_5 Ar1_6 Ar1_7 Ar1_8 Ar1_9 Ar1_10 Ar1_11 Ar1_12 Ar1_13 Ar1_14 Ar1_15 Ar1_16 Ar1_17 Ar1_18)(ite (= i 20)(+ Ar1_0 Ar1_1 Ar1_2 Ar1_3 Ar1_4 Ar1_5 Ar1_6 Ar1_7 Ar1_8 Ar1_9 Ar1_10 Ar1_11 Ar1_12 Ar1_13 Ar1_14 Ar1_15 Ar1_16 Ar1_17 Ar1_18 Ar1_19)(ite (= i 21)(+ Ar1_0 Ar1_1 Ar1_2 Ar1_3 Ar1_4 Ar1_5 Ar1_6 Ar1_7 Ar1_8 Ar1_9 Ar1_10 Ar1_11 Ar1_12 Ar1_13 Ar1_14 Ar1_15 Ar1_16 Ar1_17 Ar1_18 Ar1_19 Ar1_20)(ite (= i 22)(+ Ar1_0 Ar1_1 Ar1_2 Ar1_3 Ar1_4 Ar1_5 Ar1_6 Ar1_7 Ar1_8 Ar1_9 Ar1_10 Ar1_11 Ar1_12 Ar1_13 Ar1_14 Ar1_15 Ar1_16 Ar1_17 Ar1_18 Ar1_19 Ar1_20 Ar1_21)(ite (= i 23)(+ Ar1_0 Ar1_1 Ar1_2 Ar1_3 Ar1_4 Ar1_5 Ar1_6 Ar1_7 Ar1_8 Ar1_9 Ar1_10 Ar1_11 Ar1_12 Ar1_13 Ar1_14 Ar1_15 Ar1_16 Ar1_17 Ar1_18 Ar1_19 Ar1_20 Ar1_21 Ar1_22)(ite (= i 24)(+ Ar1_0 Ar1_1 Ar1_2 Ar1_3 Ar1_4 Ar1_5 Ar1_6 Ar1_7 Ar1_8 Ar1_9 Ar1_10 Ar1_11 Ar1_12 Ar1_13 Ar1_14 Ar1_15 Ar1_16 Ar1_17 Ar1_18 Ar1_19 Ar1_20 Ar1_21 Ar1_22 Ar1_23)(ite (= i 25)(+ Ar1_0 Ar1_1 Ar1_2 Ar1_3 Ar1_4 Ar1_5 Ar1_6 Ar1_7 Ar1_8 Ar1_9 Ar1_10 Ar1_11 Ar1_12 Ar1_13 Ar1_14 Ar1_15 Ar1_16 Ar1_17 Ar1_18 Ar1_19 Ar1_20 Ar1_21 Ar1_22 Ar1_23 Ar1_24)(ite (= i 26)(+ Ar1_0 Ar1_1 Ar1_2 Ar1_3 Ar1_4 Ar1_5 Ar1_6 Ar1_7 Ar1_8 Ar1_9 Ar1_10 Ar1_11 Ar1_12 Ar1_13 Ar1_14 Ar1_15 Ar1_16 Ar1_17 Ar1_18 Ar1_19 Ar1_20 Ar1_21 Ar1_22 Ar1_23 Ar1_24 Ar1_25)(ite (= i 27)(+ Ar1_0 Ar1_1 Ar1_2 Ar1_3 Ar1_4 Ar1_5 Ar1_6 Ar1_7 Ar1_8 Ar1_9 Ar1_10 Ar1_11 Ar1_12 Ar1_13 Ar1_14 Ar1_15 Ar1_16 Ar1_17 Ar1_18 Ar1_19 Ar1_20 Ar1_21 Ar1_22 Ar1_23 Ar1_24 Ar1_25 Ar1_26)(ite (= i 28)(+ Ar1_0 Ar1_1 Ar1_2 Ar1_3 Ar1_4 Ar1_5 Ar1_6 Ar1_7 Ar1_8 Ar1_9 Ar1_10 Ar1_11 Ar1_12 Ar1_13 Ar1_14 Ar1_15 Ar1_16 Ar1_17 Ar1_18 Ar1_19 Ar1_20 Ar1_21 Ar1_22 Ar1_23 Ar1_24 Ar1_25 Ar1_26 Ar1_27)(ite (= i 29)(+ Ar1_0 Ar1_1 Ar1_2 Ar1_3 Ar1_4 Ar1_5 Ar1_6 Ar1_7 Ar1_8 Ar1_9 Ar1_10 Ar1_11 Ar1_12 Ar1_13 Ar1_14 Ar1_15 Ar1_16 Ar1_17 Ar1_18 Ar1_19 Ar1_20 Ar1_21 Ar1_22 Ar1_23 Ar1_24 Ar1_25 Ar1_26 Ar1_27 Ar1_28)(ite (= i 30)(+ Ar1_0 Ar1_1 Ar1_2 Ar1_3 Ar1_4 Ar1_5 Ar1_6 Ar1_7 Ar1_8 Ar1_9 Ar1_10 Ar1_11 Ar1_12 Ar1_13 Ar1_14 Ar1_15 Ar1_16 Ar1_17 Ar1_18 Ar1_19 Ar1_20 Ar1_21 Ar1_22 Ar1_23 Ar1_24 Ar1_25 Ar1_26 Ar1_27 Ar1_28 Ar1_29)(ite (= i 31)(+ Ar1_0 Ar1_1 Ar1_2 Ar1_3 Ar1_4 Ar1_5 Ar1_6 Ar1_7 Ar1_8 Ar1_9 Ar1_10 Ar1_11 Ar1_12 Ar1_13 Ar1_14 Ar1_15 Ar1_16 Ar1_17 Ar1_18 Ar1_19 Ar1_20 Ar1_21 Ar1_22 Ar1_23 Ar1_24 Ar1_25 Ar1_26 Ar1_27 Ar1_28 Ar1_29 Ar1_30)(ite (= i 32)(+ Ar1_0 Ar1_1 Ar1_2 Ar1_3 Ar1_4 Ar1_5 Ar1_6 Ar1_7 Ar1_8 Ar1_9 Ar1_10 Ar1_11 Ar1_12 Ar1_13 Ar1_14 Ar1_15 Ar1_16 Ar1_17 Ar1_18 Ar1_19 Ar1_20 Ar1_21 Ar1_22 Ar1_23 Ar1_24 Ar1_25 Ar1_26 Ar1_27 Ar1_28 Ar1_29 Ar1_30 Ar1_31) ERROR))))))))))))))))))))))))))))))))))
+
+
+;constant declarations for Ar2
+(declare-const Ar2_0 Int)(declare-const Ar2_1 Int)(declare-const Ar2_2 Int)(declare-const Ar2_3 Int)(declare-const Ar2_4 Int)(declare-const Ar2_5 Int)(declare-const Ar2_6 Int)(declare-const Ar2_7 Int)(declare-const Ar2_8 Int)(declare-const Ar2_9 Int)(declare-const Ar2_10 Int)(declare-const Ar2_11 Int)(declare-const Ar2_12 Int)(declare-const Ar2_13 Int)(declare-const Ar2_14 Int)(declare-const Ar2_15 Int)(declare-const Ar2_16 Int)(declare-const Ar2_17 Int)(declare-const Ar2_18 Int)(declare-const Ar2_19 Int)(declare-const Ar2_20 Int)(declare-const Ar2_21 Int)(declare-const Ar2_22 Int)(declare-const Ar2_23 Int)(declare-const Ar2_24 Int)(declare-const Ar2_25 Int)(declare-const Ar2_26 Int)(declare-const Ar2_27 Int)(declare-const Ar2_28 Int)(declare-const Ar2_29 Int)(declare-const Ar2_30 Int)(declare-const Ar2_31 Int)
+;isInBounds assertions for Ar2
+(assert (and (iB Ar2_0)(iB Ar2_1)(iB Ar2_2)(iB Ar2_3)(iB Ar2_4)(iB Ar2_5)(iB Ar2_6)(iB Ar2_7)(iB Ar2_8)(iB Ar2_9)(iB Ar2_10)(iB Ar2_11)(iB Ar2_12)(iB Ar2_13)(iB Ar2_14)(iB Ar2_15)(iB Ar2_16)(iB Ar2_17)(iB Ar2_18)(iB Ar2_19)(iB Ar2_20)(iB Ar2_21)(iB Ar2_22)(iB Ar2_23)(iB Ar2_24)(iB Ar2_25)(iB Ar2_26)(iB Ar2_27)(iB Ar2_28)(iB Ar2_29)(iB Ar2_30)(iB Ar2_31)))
+;select function for Ar2
+(define-fun s_Ar2 ((i Int)) Int (ite (= i 0) Ar2_0 (ite (= i 1) Ar2_1 (ite (= i 2) Ar2_2 (ite (= i 3) Ar2_3 (ite (= i 4) Ar2_4 (ite (= i 5) Ar2_5 (ite (= i 6) Ar2_6 (ite (= i 7) Ar2_7 (ite (= i 8) Ar2_8 (ite (= i 9) Ar2_9 (ite (= i 10) Ar2_10 (ite (= i 11) Ar2_11 (ite (= i 12) Ar2_12 (ite (= i 13) Ar2_13 (ite (= i 14) Ar2_14 (ite (= i 15) Ar2_15 (ite (= i 16) Ar2_16 (ite (= i 17) Ar2_17 (ite (= i 18) Ar2_18 (ite (= i 19) Ar2_19 (ite (= i 20) Ar2_20 (ite (= i 21) Ar2_21 (ite (= i 22) Ar2_22 (ite (= i 23) Ar2_23 (ite (= i 24) Ar2_24 (ite (= i 25) Ar2_25 (ite (= i 26) Ar2_26 (ite (= i 27) Ar2_27 (ite (= i 28) Ar2_28 (ite (= i 29) Ar2_29 (ite (= i 30) Ar2_30 (ite (= i 31) Ar2_31 ERROR)))))))))))))))))))))))))))))))))
+;arraySum function for Ar2
+(define-fun a_Ar2 ((i Int)) Int (ite (= i 0) 0 (ite (= i 1) Ar2_0 (ite (= i 2)(+ Ar2_0 Ar2_1)(ite (= i 3)(+ Ar2_0 Ar2_1 Ar2_2)(ite (= i 4)(+ Ar2_0 Ar2_1 Ar2_2 Ar2_3)(ite (= i 5)(+ Ar2_0 Ar2_1 Ar2_2 Ar2_3 Ar2_4)(ite (= i 6)(+ Ar2_0 Ar2_1 Ar2_2 Ar2_3 Ar2_4 Ar2_5)(ite (= i 7)(+ Ar2_0 Ar2_1 Ar2_2 Ar2_3 Ar2_4 Ar2_5 Ar2_6)(ite (= i 8)(+ Ar2_0 Ar2_1 Ar2_2 Ar2_3 Ar2_4 Ar2_5 Ar2_6 Ar2_7)(ite (= i 9)(+ Ar2_0 Ar2_1 Ar2_2 Ar2_3 Ar2_4 Ar2_5 Ar2_6 Ar2_7 Ar2_8)(ite (= i 10)(+ Ar2_0 Ar2_1 Ar2_2 Ar2_3 Ar2_4 Ar2_5 Ar2_6 Ar2_7 Ar2_8 Ar2_9)(ite (= i 11)(+ Ar2_0 Ar2_1 Ar2_2 Ar2_3 Ar2_4 Ar2_5 Ar2_6 Ar2_7 Ar2_8 Ar2_9 Ar2_10)(ite (= i 12)(+ Ar2_0 Ar2_1 Ar2_2 Ar2_3 Ar2_4 Ar2_5 Ar2_6 Ar2_7 Ar2_8 Ar2_9 Ar2_10 Ar2_11)(ite (= i 13)(+ Ar2_0 Ar2_1 Ar2_2 Ar2_3 Ar2_4 Ar2_5 Ar2_6 Ar2_7 Ar2_8 Ar2_9 Ar2_10 Ar2_11 Ar2_12)(ite (= i 14)(+ Ar2_0 Ar2_1 Ar2_2 Ar2_3 Ar2_4 Ar2_5 Ar2_6 Ar2_7 Ar2_8 Ar2_9 Ar2_10 Ar2_11 Ar2_12 Ar2_13)(ite (= i 15)(+ Ar2_0 Ar2_1 Ar2_2 Ar2_3 Ar2_4 Ar2_5 Ar2_6 Ar2_7 Ar2_8 Ar2_9 Ar2_10 Ar2_11 Ar2_12 Ar2_13 Ar2_14)(ite (= i 16)(+ Ar2_0 Ar2_1 Ar2_2 Ar2_3 Ar2_4 Ar2_5 Ar2_6 Ar2_7 Ar2_8 Ar2_9 Ar2_10 Ar2_11 Ar2_12 Ar2_13 Ar2_14 Ar2_15)(ite (= i 17)(+ Ar2_0 Ar2_1 Ar2_2 Ar2_3 Ar2_4 Ar2_5 Ar2_6 Ar2_7 Ar2_8 Ar2_9 Ar2_10 Ar2_11 Ar2_12 Ar2_13 Ar2_14 Ar2_15 Ar2_16)(ite (= i 18)(+ Ar2_0 Ar2_1 Ar2_2 Ar2_3 Ar2_4 Ar2_5 Ar2_6 Ar2_7 Ar2_8 Ar2_9 Ar2_10 Ar2_11 Ar2_12 Ar2_13 Ar2_14 Ar2_15 Ar2_16 Ar2_17)(ite (= i 19)(+ Ar2_0 Ar2_1 Ar2_2 Ar2_3 Ar2_4 Ar2_5 Ar2_6 Ar2_7 Ar2_8 Ar2_9 Ar2_10 Ar2_11 Ar2_12 Ar2_13 Ar2_14 Ar2_15 Ar2_16 Ar2_17 Ar2_18)(ite (= i 20)(+ Ar2_0 Ar2_1 Ar2_2 Ar2_3 Ar2_4 Ar2_5 Ar2_6 Ar2_7 Ar2_8 Ar2_9 Ar2_10 Ar2_11 Ar2_12 Ar2_13 Ar2_14 Ar2_15 Ar2_16 Ar2_17 Ar2_18 Ar2_19)(ite (= i 21)(+ Ar2_0 Ar2_1 Ar2_2 Ar2_3 Ar2_4 Ar2_5 Ar2_6 Ar2_7 Ar2_8 Ar2_9 Ar2_10 Ar2_11 Ar2_12 Ar2_13 Ar2_14 Ar2_15 Ar2_16 Ar2_17 Ar2_18 Ar2_19 Ar2_20)(ite (= i 22)(+ Ar2_0 Ar2_1 Ar2_2 Ar2_3 Ar2_4 Ar2_5 Ar2_6 Ar2_7 Ar2_8 Ar2_9 Ar2_10 Ar2_11 Ar2_12 Ar2_13 Ar2_14 Ar2_15 Ar2_16 Ar2_17 Ar2_18 Ar2_19 Ar2_20 Ar2_21)(ite (= i 23)(+ Ar2_0 Ar2_1 Ar2_2 Ar2_3 Ar2_4 Ar2_5 Ar2_6 Ar2_7 Ar2_8 Ar2_9 Ar2_10 Ar2_11 Ar2_12 Ar2_13 Ar2_14 Ar2_15 Ar2_16 Ar2_17 Ar2_18 Ar2_19 Ar2_20 Ar2_21 Ar2_22)(ite (= i 24)(+ Ar2_0 Ar2_1 Ar2_2 Ar2_3 Ar2_4 Ar2_5 Ar2_6 Ar2_7 Ar2_8 Ar2_9 Ar2_10 Ar2_11 Ar2_12 Ar2_13 Ar2_14 Ar2_15 Ar2_16 Ar2_17 Ar2_18 Ar2_19 Ar2_20 Ar2_21 Ar2_22 Ar2_23)(ite (= i 25)(+ Ar2_0 Ar2_1 Ar2_2 Ar2_3 Ar2_4 Ar2_5 Ar2_6 Ar2_7 Ar2_8 Ar2_9 Ar2_10 Ar2_11 Ar2_12 Ar2_13 Ar2_14 Ar2_15 Ar2_16 Ar2_17 Ar2_18 Ar2_19 Ar2_20 Ar2_21 Ar2_22 Ar2_23 Ar2_24)(ite (= i 26)(+ Ar2_0 Ar2_1 Ar2_2 Ar2_3 Ar2_4 Ar2_5 Ar2_6 Ar2_7 Ar2_8 Ar2_9 Ar2_10 Ar2_11 Ar2_12 Ar2_13 Ar2_14 Ar2_15 Ar2_16 Ar2_17 Ar2_18 Ar2_19 Ar2_20 Ar2_21 Ar2_22 Ar2_23 Ar2_24 Ar2_25)(ite (= i 27)(+ Ar2_0 Ar2_1 Ar2_2 Ar2_3 Ar2_4 Ar2_5 Ar2_6 Ar2_7 Ar2_8 Ar2_9 Ar2_10 Ar2_11 Ar2_12 Ar2_13 Ar2_14 Ar2_15 Ar2_16 Ar2_17 Ar2_18 Ar2_19 Ar2_20 Ar2_21 Ar2_22 Ar2_23 Ar2_24 Ar2_25 Ar2_26)(ite (= i 28)(+ Ar2_0 Ar2_1 Ar2_2 Ar2_3 Ar2_4 Ar2_5 Ar2_6 Ar2_7 Ar2_8 Ar2_9 Ar2_10 Ar2_11 Ar2_12 Ar2_13 Ar2_14 Ar2_15 Ar2_16 Ar2_17 Ar2_18 Ar2_19 Ar2_20 Ar2_21 Ar2_22 Ar2_23 Ar2_24 Ar2_25 Ar2_26 Ar2_27)(ite (= i 29)(+ Ar2_0 Ar2_1 Ar2_2 Ar2_3 Ar2_4 Ar2_5 Ar2_6 Ar2_7 Ar2_8 Ar2_9 Ar2_10 Ar2_11 Ar2_12 Ar2_13 Ar2_14 Ar2_15 Ar2_16 Ar2_17 Ar2_18 Ar2_19 Ar2_20 Ar2_21 Ar2_22 Ar2_23 Ar2_24 Ar2_25 Ar2_26 Ar2_27 Ar2_28)(ite (= i 30)(+ Ar2_0 Ar2_1 Ar2_2 Ar2_3 Ar2_4 Ar2_5 Ar2_6 Ar2_7 Ar2_8 Ar2_9 Ar2_10 Ar2_11 Ar2_12 Ar2_13 Ar2_14 Ar2_15 Ar2_16 Ar2_17 Ar2_18 Ar2_19 Ar2_20 Ar2_21 Ar2_22 Ar2_23 Ar2_24 Ar2_25 Ar2_26 Ar2_27 Ar2_28 Ar2_29)(ite (= i 31)(+ Ar2_0 Ar2_1 Ar2_2 Ar2_3 Ar2_4 Ar2_5 Ar2_6 Ar2_7 Ar2_8 Ar2_9 Ar2_10 Ar2_11 Ar2_12 Ar2_13 Ar2_14 Ar2_15 Ar2_16 Ar2_17 Ar2_18 Ar2_19 Ar2_20 Ar2_21 Ar2_22 Ar2_23 Ar2_24 Ar2_25 Ar2_26 Ar2_27 Ar2_28 Ar2_29 Ar2_30)(ite (= i 32)(+ Ar2_0 Ar2_1 Ar2_2 Ar2_3 Ar2_4 Ar2_5 Ar2_6 Ar2_7 Ar2_8 Ar2_9 Ar2_10 Ar2_11 Ar2_12 Ar2_13 Ar2_14 Ar2_15 Ar2_16 Ar2_17 Ar2_18 Ar2_19 Ar2_20 Ar2_21 Ar2_22 Ar2_23 Ar2_24 Ar2_25 Ar2_26 Ar2_27 Ar2_28 Ar2_29 Ar2_30 Ar2_31) ERROR))))))))))))))))))))))))))))))))))
+
+
+;constant declarations for Ar3
+(declare-const Ar3_0 Int)(declare-const Ar3_1 Int)(declare-const Ar3_2 Int)(declare-const Ar3_3 Int)(declare-const Ar3_4 Int)(declare-const Ar3_5 Int)(declare-const Ar3_6 Int)(declare-const Ar3_7 Int)(declare-const Ar3_8 Int)(declare-const Ar3_9 Int)(declare-const Ar3_10 Int)(declare-const Ar3_11 Int)(declare-const Ar3_12 Int)(declare-const Ar3_13 Int)(declare-const Ar3_14 Int)(declare-const Ar3_15 Int)(declare-const Ar3_16 Int)(declare-const Ar3_17 Int)(declare-const Ar3_18 Int)(declare-const Ar3_19 Int)(declare-const Ar3_20 Int)(declare-const Ar3_21 Int)(declare-const Ar3_22 Int)(declare-const Ar3_23 Int)(declare-const Ar3_24 Int)(declare-const Ar3_25 Int)(declare-const Ar3_26 Int)(declare-const Ar3_27 Int)(declare-const Ar3_28 Int)(declare-const Ar3_29 Int)(declare-const Ar3_30 Int)(declare-const Ar3_31 Int)
+;isInBounds assertions for Ar3
+(assert (and (iB Ar3_0)(iB Ar3_1)(iB Ar3_2)(iB Ar3_3)(iB Ar3_4)(iB Ar3_5)(iB Ar3_6)(iB Ar3_7)(iB Ar3_8)(iB Ar3_9)(iB Ar3_10)(iB Ar3_11)(iB Ar3_12)(iB Ar3_13)(iB Ar3_14)(iB Ar3_15)(iB Ar3_16)(iB Ar3_17)(iB Ar3_18)(iB Ar3_19)(iB Ar3_20)(iB Ar3_21)(iB Ar3_22)(iB Ar3_23)(iB Ar3_24)(iB Ar3_25)(iB Ar3_26)(iB Ar3_27)(iB Ar3_28)(iB Ar3_29)(iB Ar3_30)(iB Ar3_31)))
+;select function for Ar3
+(define-fun s_Ar3 ((i Int)) Int (ite (= i 0) Ar3_0 (ite (= i 1) Ar3_1 (ite (= i 2) Ar3_2 (ite (= i 3) Ar3_3 (ite (= i 4) Ar3_4 (ite (= i 5) Ar3_5 (ite (= i 6) Ar3_6 (ite (= i 7) Ar3_7 (ite (= i 8) Ar3_8 (ite (= i 9) Ar3_9 (ite (= i 10) Ar3_10 (ite (= i 11) Ar3_11 (ite (= i 12) Ar3_12 (ite (= i 13) Ar3_13 (ite (= i 14) Ar3_14 (ite (= i 15) Ar3_15 (ite (= i 16) Ar3_16 (ite (= i 17) Ar3_17 (ite (= i 18) Ar3_18 (ite (= i 19) Ar3_19 (ite (= i 20) Ar3_20 (ite (= i 21) Ar3_21 (ite (= i 22) Ar3_22 (ite (= i 23) Ar3_23 (ite (= i 24) Ar3_24 (ite (= i 25) Ar3_25 (ite (= i 26) Ar3_26 (ite (= i 27) Ar3_27 (ite (= i 28) Ar3_28 (ite (= i 29) Ar3_29 (ite (= i 30) Ar3_30 (ite (= i 31) Ar3_31 ERROR)))))))))))))))))))))))))))))))))
+;arraySum function for Ar3
+(define-fun a_Ar3 ((i Int)) Int (ite (= i 0) 0 (ite (= i 1) Ar3_0 (ite (= i 2)(+ Ar3_0 Ar3_1)(ite (= i 3)(+ Ar3_0 Ar3_1 Ar3_2)(ite (= i 4)(+ Ar3_0 Ar3_1 Ar3_2 Ar3_3)(ite (= i 5)(+ Ar3_0 Ar3_1 Ar3_2 Ar3_3 Ar3_4)(ite (= i 6)(+ Ar3_0 Ar3_1 Ar3_2 Ar3_3 Ar3_4 Ar3_5)(ite (= i 7)(+ Ar3_0 Ar3_1 Ar3_2 Ar3_3 Ar3_4 Ar3_5 Ar3_6)(ite (= i 8)(+ Ar3_0 Ar3_1 Ar3_2 Ar3_3 Ar3_4 Ar3_5 Ar3_6 Ar3_7)(ite (= i 9)(+ Ar3_0 Ar3_1 Ar3_2 Ar3_3 Ar3_4 Ar3_5 Ar3_6 Ar3_7 Ar3_8)(ite (= i 10)(+ Ar3_0 Ar3_1 Ar3_2 Ar3_3 Ar3_4 Ar3_5 Ar3_6 Ar3_7 Ar3_8 Ar3_9)(ite (= i 11)(+ Ar3_0 Ar3_1 Ar3_2 Ar3_3 Ar3_4 Ar3_5 Ar3_6 Ar3_7 Ar3_8 Ar3_9 Ar3_10)(ite (= i 12)(+ Ar3_0 Ar3_1 Ar3_2 Ar3_3 Ar3_4 Ar3_5 Ar3_6 Ar3_7 Ar3_8 Ar3_9 Ar3_10 Ar3_11)(ite (= i 13)(+ Ar3_0 Ar3_1 Ar3_2 Ar3_3 Ar3_4 Ar3_5 Ar3_6 Ar3_7 Ar3_8 Ar3_9 Ar3_10 Ar3_11 Ar3_12)(ite (= i 14)(+ Ar3_0 Ar3_1 Ar3_2 Ar3_3 Ar3_4 Ar3_5 Ar3_6 Ar3_7 Ar3_8 Ar3_9 Ar3_10 Ar3_11 Ar3_12 Ar3_13)(ite (= i 15)(+ Ar3_0 Ar3_1 Ar3_2 Ar3_3 Ar3_4 Ar3_5 Ar3_6 Ar3_7 Ar3_8 Ar3_9 Ar3_10 Ar3_11 Ar3_12 Ar3_13 Ar3_14)(ite (= i 16)(+ Ar3_0 Ar3_1 Ar3_2 Ar3_3 Ar3_4 Ar3_5 Ar3_6 Ar3_7 Ar3_8 Ar3_9 Ar3_10 Ar3_11 Ar3_12 Ar3_13 Ar3_14 Ar3_15)(ite (= i 17)(+ Ar3_0 Ar3_1 Ar3_2 Ar3_3 Ar3_4 Ar3_5 Ar3_6 Ar3_7 Ar3_8 Ar3_9 Ar3_10 Ar3_11 Ar3_12 Ar3_13 Ar3_14 Ar3_15 Ar3_16)(ite (= i 18)(+ Ar3_0 Ar3_1 Ar3_2 Ar3_3 Ar3_4 Ar3_5 Ar3_6 Ar3_7 Ar3_8 Ar3_9 Ar3_10 Ar3_11 Ar3_12 Ar3_13 Ar3_14 Ar3_15 Ar3_16 Ar3_17)(ite (= i 19)(+ Ar3_0 Ar3_1 Ar3_2 Ar3_3 Ar3_4 Ar3_5 Ar3_6 Ar3_7 Ar3_8 Ar3_9 Ar3_10 Ar3_11 Ar3_12 Ar3_13 Ar3_14 Ar3_15 Ar3_16 Ar3_17 Ar3_18)(ite (= i 20)(+ Ar3_0 Ar3_1 Ar3_2 Ar3_3 Ar3_4 Ar3_5 Ar3_6 Ar3_7 Ar3_8 Ar3_9 Ar3_10 Ar3_11 Ar3_12 Ar3_13 Ar3_14 Ar3_15 Ar3_16 Ar3_17 Ar3_18 Ar3_19)(ite (= i 21)(+ Ar3_0 Ar3_1 Ar3_2 Ar3_3 Ar3_4 Ar3_5 Ar3_6 Ar3_7 Ar3_8 Ar3_9 Ar3_10 Ar3_11 Ar3_12 Ar3_13 Ar3_14 Ar3_15 Ar3_16 Ar3_17 Ar3_18 Ar3_19 Ar3_20)(ite (= i 22)(+ Ar3_0 Ar3_1 Ar3_2 Ar3_3 Ar3_4 Ar3_5 Ar3_6 Ar3_7 Ar3_8 Ar3_9 Ar3_10 Ar3_11 Ar3_12 Ar3_13 Ar3_14 Ar3_15 Ar3_16 Ar3_17 Ar3_18 Ar3_19 Ar3_20 Ar3_21)(ite (= i 23)(+ Ar3_0 Ar3_1 Ar3_2 Ar3_3 Ar3_4 Ar3_5 Ar3_6 Ar3_7 Ar3_8 Ar3_9 Ar3_10 Ar3_11 Ar3_12 Ar3_13 Ar3_14 Ar3_15 Ar3_16 Ar3_17 Ar3_18 Ar3_19 Ar3_20 Ar3_21 Ar3_22)(ite (= i 24)(+ Ar3_0 Ar3_1 Ar3_2 Ar3_3 Ar3_4 Ar3_5 Ar3_6 Ar3_7 Ar3_8 Ar3_9 Ar3_10 Ar3_11 Ar3_12 Ar3_13 Ar3_14 Ar3_15 Ar3_16 Ar3_17 Ar3_18 Ar3_19 Ar3_20 Ar3_21 Ar3_22 Ar3_23)(ite (= i 25)(+ Ar3_0 Ar3_1 Ar3_2 Ar3_3 Ar3_4 Ar3_5 Ar3_6 Ar3_7 Ar3_8 Ar3_9 Ar3_10 Ar3_11 Ar3_12 Ar3_13 Ar3_14 Ar3_15 Ar3_16 Ar3_17 Ar3_18 Ar3_19 Ar3_20 Ar3_21 Ar3_22 Ar3_23 Ar3_24)(ite (= i 26)(+ Ar3_0 Ar3_1 Ar3_2 Ar3_3 Ar3_4 Ar3_5 Ar3_6 Ar3_7 Ar3_8 Ar3_9 Ar3_10 Ar3_11 Ar3_12 Ar3_13 Ar3_14 Ar3_15 Ar3_16 Ar3_17 Ar3_18 Ar3_19 Ar3_20 Ar3_21 Ar3_22 Ar3_23 Ar3_24 Ar3_25)(ite (= i 27)(+ Ar3_0 Ar3_1 Ar3_2 Ar3_3 Ar3_4 Ar3_5 Ar3_6 Ar3_7 Ar3_8 Ar3_9 Ar3_10 Ar3_11 Ar3_12 Ar3_13 Ar3_14 Ar3_15 Ar3_16 Ar3_17 Ar3_18 Ar3_19 Ar3_20 Ar3_21 Ar3_22 Ar3_23 Ar3_24 Ar3_25 Ar3_26)(ite (= i 28)(+ Ar3_0 Ar3_1 Ar3_2 Ar3_3 Ar3_4 Ar3_5 Ar3_6 Ar3_7 Ar3_8 Ar3_9 Ar3_10 Ar3_11 Ar3_12 Ar3_13 Ar3_14 Ar3_15 Ar3_16 Ar3_17 Ar3_18 Ar3_19 Ar3_20 Ar3_21 Ar3_22 Ar3_23 Ar3_24 Ar3_25 Ar3_26 Ar3_27)(ite (= i 29)(+ Ar3_0 Ar3_1 Ar3_2 Ar3_3 Ar3_4 Ar3_5 Ar3_6 Ar3_7 Ar3_8 Ar3_9 Ar3_10 Ar3_11 Ar3_12 Ar3_13 Ar3_14 Ar3_15 Ar3_16 Ar3_17 Ar3_18 Ar3_19 Ar3_20 Ar3_21 Ar3_22 Ar3_23 Ar3_24 Ar3_25 Ar3_26 Ar3_27 Ar3_28)(ite (= i 30)(+ Ar3_0 Ar3_1 Ar3_2 Ar3_3 Ar3_4 Ar3_5 Ar3_6 Ar3_7 Ar3_8 Ar3_9 Ar3_10 Ar3_11 Ar3_12 Ar3_13 Ar3_14 Ar3_15 Ar3_16 Ar3_17 Ar3_18 Ar3_19 Ar3_20 Ar3_21 Ar3_22 Ar3_23 Ar3_24 Ar3_25 Ar3_26 Ar3_27 Ar3_28 Ar3_29)(ite (= i 31)(+ Ar3_0 Ar3_1 Ar3_2 Ar3_3 Ar3_4 Ar3_5 Ar3_6 Ar3_7 Ar3_8 Ar3_9 Ar3_10 Ar3_11 Ar3_12 Ar3_13 Ar3_14 Ar3_15 Ar3_16 Ar3_17 Ar3_18 Ar3_19 Ar3_20 Ar3_21 Ar3_22 Ar3_23 Ar3_24 Ar3_25 Ar3_26 Ar3_27 Ar3_28 Ar3_29 Ar3_30)(ite (= i 32)(+ Ar3_0 Ar3_1 Ar3_2 Ar3_3 Ar3_4 Ar3_5 Ar3_6 Ar3_7 Ar3_8 Ar3_9 Ar3_10 Ar3_11 Ar3_12 Ar3_13 Ar3_14 Ar3_15 Ar3_16 Ar3_17 Ar3_18 Ar3_19 Ar3_20 Ar3_21 Ar3_22 Ar3_23 Ar3_24 Ar3_25 Ar3_26 Ar3_27 Ar3_28 Ar3_29 Ar3_30 Ar3_31) ERROR))))))))))))))))))))))))))))))))))
+
+
+;x(((a+b)+c)+d)+e
+
+;/////////////////////////Define String theory/////////////////
+(declare-sort Char 0)
+(declare-sort String 0)
+
+(declare-fun _OUTOFBOUNDS_ () Char)(declare-fun _newline_ () Char)(declare-fun _tab_ () Char)(declare-fun _feed_ () Char)(declare-fun _return_ () Char)(declare-fun __ () Char)
+(declare-fun _a_ () Char)(declare-fun _b_ () Char)(declare-fun _c_ () Char)(declare-fun _d_ () Char)(declare-fun _e_ () Char)(declare-fun _f_ () Char)(declare-fun _g_ () Char)(declare-fun _h_ () Char)(declare-fun _i_ () Char)(declare-fun _j_ () Char)(declare-fun _k_ () Char)(declare-fun _l_ () Char)(declare-fun _m_ () Char)(declare-fun _n_ () Char)(declare-fun _o_ () Char)(declare-fun _p_ () Char)(declare-fun _q_ () Char)(declare-fun _r_ () Char)(declare-fun _s_ () Char)(declare-fun _t_ () Char)(declare-fun _u_ () Char)(declare-fun _v_ () Char)(declare-fun _w_ () Char)(declare-fun _x_ () Char)(declare-fun _y_ () Char)(declare-fun _z_ () Char)
+(declare-fun _A_ () Char)(declare-fun _B_ () Char)(declare-fun _C_ () Char)(declare-fun _D_ () Char)(declare-fun _E_ () Char)(declare-fun _F_ () Char)(declare-fun _G_ () Char)(declare-fun _H_ () Char)(declare-fun _I_ () Char)(declare-fun _J_ () Char)(declare-fun _K_ () Char)(declare-fun _L_ () Char)(declare-fun _M_ () Char)(declare-fun _N_ () Char)(declare-fun _O_ () Char)(declare-fun _P_ () Char)(declare-fun _Q_ () Char)(declare-fun _R_ () Char)(declare-fun _S_ () Char)(declare-fun _T_ () Char)(declare-fun _U_ () Char)(declare-fun _V_ () Char)(declare-fun _W_ () Char)(declare-fun _X_ () Char)(declare-fun _Y_ () Char)(declare-fun _Z_ () Char)
+(declare-fun _0_ () Char)(declare-fun _1_ () Char)(declare-fun _2_ () Char)(declare-fun _3_ () Char)(declare-fun _4_ () Char)(declare-fun _5_ () Char)(declare-fun _6_ () Char)(declare-fun _7_ () Char)(declare-fun _8_ () Char)(declare-fun _9_ () Char)
+(declare-fun _excl_ () Char)(declare-fun _at_ () Char)(declare-fun _pound_ () Char)(declare-fun _dollar_ () Char)(declare-fun _percent_ () Char)(declare-fun _carrot_ () Char)(declare-fun _amp_ () Char)(declare-fun _star_ () Char)(declare-fun _openparen_ () Char)(declare-fun _closeparen_ () Char)
+(declare-fun _tilde_ () Char)(declare-fun _backtick_ () Char)
+(declare-fun _dash_ () Char)(declare-fun _underscore_ () Char)
+(declare-fun _plus_ () Char)(declare-fun _equals_ () Char)
+(declare-fun _lcurly_ () Char)(declare-fun _lbracket_ () Char)
+(declare-fun _rcurly_ () Char)(declare-fun _rbracket_ () Char)
+(declare-fun _mid_ () Char)(declare-fun _fwdslash_ () Char)
+(declare-fun _colon_ () Char)(declare-fun _semicolon_ () Char)
+(declare-fun _dblquote_ () Char)(declare-fun _singlequote_ () Char)
+(declare-fun _langle_ () Char)(declare-fun _comma_ () Char)
+(declare-fun _rangle_ () Char)(declare-fun _period_ () Char)
+(declare-fun _question_ () Char)(declare-fun _backslash_ () Char)
+
+(assert 
+	(distinct 
+		_OUTOFBOUNDS_ _newline_ _tab_ _feed_ _return_ __
+		_a_ _b_ _c_ _d_ _e_ _f_ _g_ _h_ _i_ _j_ _k_ _l_ _m_ _n_ _o_ _p_ _q_ _r_ _s_ _t_ _u_ _v_ _w_ _x_ _y_ _z_
+		_A_ _B_ _C_ _D_ _E_ _F_ _G_ _H_ _I_ _J_ _K_ _L_ _M_ _N_ _O_ _P_ _Q_ _R_ _S_ _T_ _U_ _V_ _W_ _X_ _Y_ _Z_
+		_0_ _1_ _2_ _3_ _4_ _5_ _6_ _7_ _8_ _9_
+		_excl_ _at_ _pound_ _dollar_ _percent_ _carrot_ _amp_ _star_ _openparen_ _closeparen_
+		_tilde_ _backtick_
+		_dash_ _underscore_
+		_plus_ _equals_
+		_lcurly_ _lbracket_
+		_rcurly_ _rbracket_
+		_mid_ _fwdslash_
+		_colon_ _semicolon_
+		_dblquote_ _singlequote_
+		_langle_ _comma_
+		_rangle_ _period_
+		_question_ _backslash_
+	)
+)
+
+;eliminate imaginary characters	 
+(assert 
+	(forall ((c Char))
+		(or
+			(= c _OUTOFBOUNDS_)(= c _newline_)(= c _tab_)(= c _feed_)(= c _return_)(= c __)
+			(= c _a_)(= c _b_)(= c _c_)(= c _d_)(= c _e_)(= c _f_)(= c _g_)(= c _h_)(= c _i_)(= c _j_)(= c _k_)(= c _l_)(= c _m_)(= c _n_)(= c _o_)(= c _p_)(= c _q_)(= c _r_)(= c _s_)(= c _t_)(= c _u_)(= c _v_)(= c _w_)(= c _x_)(= c _y_)(= c _z_)
+			(= c _A_)(= c _B_)(= c _C_)(= c _D_)(= c _E_)(= c _F_)(= c _G_)(= c _H_)(= c _I_)(= c _J_)(= c _K_)(= c _L_)(= c _M_)(= c _N_)(= c _O_)(= c _P_)(= c _Q_)(= c _R_)(= c _S_)(= c _T_)(= c _U_)(= c _V_)(= c _W_)(= c _X_)(= c _Y_)(= c _Z_)
+			(= c _0_)(= c _1_)(= c _2_)(= c _3_)(= c _4_)(= c _5_)(= c _6_)(= c _7_)(= c _8_)(= c _9_)
+			(= c _excl_)(= c _at_)(= c _pound_)(= c _dollar_)(= c _percent_)(= c _carrot_)(= c _amp_)(= c _star_)(= c _openparen_)(= c _closeparen_)
+			(= c _tilde_)(= c _backtick_)
+			(= c _dash_)(= c _underscore_)
+			(= c _plus_)(= c _equals_)
+			(= c _lcurly_)(= c _lbracket_)
+			(= c _rcurly_)(= c _rbracket_)
+			(= c _mid_)(= c _fwdslash_)
+			(= c _colon_)(= c _semicolon_)
+			(= c _dblquote_)(= c _singlequote_)
+			(= c _langle_)(= c _comma_)
+			(= c _rangle_)(= c _period_)
+			(= c _question_)(= c _backslash_)
+		)
+	)
+)
+
+;getter functions for the string
+(declare-fun length ( String ) Int )
+(declare-fun charOf (String Int) Char)
+
+;force all unmapped indices to _OUTOFBOUNDS_ to
+;avoid false positive models
+(assert 
+	(forall ((goodString String))
+		(forall ((badIndex Int))
+			(=>
+				(or 
+					(< badIndex 0) 
+					(>= badIndex (length goodString))
+				)
+				(= (charOf goodString badIndex) _OUTOFBOUNDS_) 
+			)
+		)	
+	)
+)
+
+;///////////////////Define Variables//////////////////
+
+;declare the input string variable
+;the index mapping for inputString goes at the end so that many strings can be pushed and popped
+(declare-fun inputString () String)
+
+;declare the variable where the pattern begins, solver should choose this
+(declare-const patternBegin Int)
+(assert 
+	(and
+		(>= patternBegin 0)
+		(< patternBegin LENGTH)
+	)
+)
+
+(declare-sort Leaf 0)
+
+;instantiate the leaves for this pattern:
+
+(declare-fun leaf_x () Leaf)
+(declare-fun leaf_aPlus () Leaf)
+(declare-fun leaf_b () Leaf)
+(declare-fun leaf_c () Leaf)
+(declare-fun leaf_d () Leaf)
+(declare-fun leaf_e () Leaf)
+
+
+
+
+;leaf aPlus array contents need to be between 1 and MAX
+(assert 
+	(forall ((aPlus_index Int))
+		(=>
+			(and
+				(>= aPlus_index 0)
+				(< aPlus_index (a_Ar2 (a_Ar1 (s_Ar0 0))))
+			)
+			(and
+				(>= (s_Ar3 aPlus_index) 1)
+				(<= (s_Ar3 aPlus_index) LENGTH)
+			)	
+		)
+	)
+)
+
+
+
+;branch V0 is a '+' style repetition, so it must repeat between 1 and MAX times
+(assert 
+	(and
+		(>= (s_Ar0 0) 1)
+		(<= (s_Ar0 0) LENGTH)
+	)	
+)
+
+
+;branch V1 is a '+' style repetition, so all of its vines must repeat between 1 and MAX times
+(assert 
+	(forall ((V0_index Int))
+		(=>
+			(and
+				(>= V0_index 0)
+				(< V0_index (s_Ar0 0))
+			)
+			(and
+				(>= (s_Ar1 V0_index) 1)
+				(<= (s_Ar1 V0_index) LENGTH)
+			)
+		)	
+	)
+)
+
+;branch V2 is a '+' style repetition, so all of its vines must repeat between 1 and MAX times
+(assert 
+	(forall ((V2_index Int))
+		(=>
+			(and
+				(>= V2_index 0)
+				(< V2_index (a_Ar1 (s_Ar0 0)))
+			)
+			(and
+				(>= (s_Ar2 V2_index) 1)
+				(<= (s_Ar2 V2_index) LENGTH)
+			)
+		)	
+	)
+)
+
+
+;////////////////////////Specify satisfaction at the leaf level//////////////////
+
+(declare-fun leafLength (Leaf) Int)
+(declare-fun leafSat (Leaf) Bool); this is true iff the leaf is sat for all indices it should be sat at
+
+;/////leaf_x////
+(declare-const leaf_x_Char Char)
+(assert (= leaf_x_Char _x_))
+(assert (= (leafLength leaf_x) 1))
+(define-fun leaf_x_Sat () Bool (= leaf_x_Char (charOf inputString patternBegin)))
+(assert (= (leafSat leaf_x) leaf_x_Sat))
+
+
+;/////leaf_aPlus////
+(declare-const leaf_aPlus_Char Char)
+(assert (= leaf_aPlus_Char _a_))
+(assert (= (leafLength leaf_aPlus) 1))
+(define-fun leaf_aPlus_Sat () Bool
+	(forall ((V0_index Int))
+		(=>
+			(and
+				(>= V0_index 0)
+				(< V0_index (s_Ar0 0))
+			)
+			(forall ((V1_index Int))
+				(=>
+					(and
+						(>= V1_index 0)
+						(< V1_index (s_Ar1 V0_index))
+					)
+					(forall ((V2_index Int))
+						(=>
+							(and
+								(>= V2_index 0)
+								(< V2_index (s_Ar2 V1_index))
+							)
+							(forall ((R_index Int))
+								(=>
+									(and
+										(>= R_index 0)
+										(< R_index (s_Ar3 (+ V2_index (a_Ar2 (+ V1_index (a_Ar1 V0_index)))))) 
+									)
+									(= leaf_aPlus_Char 
+										(charOf 
+											inputString
+											(+
+												patternBegin
+												(leafLength leaf_x)
+												(* (leafLength leaf_aPlus) (a_Ar3 (+ V2_index (a_Ar2 (+ V1_index (a_Ar1 V0_index))))));
+												(* (leafLength leaf_b) (+ V2_index (a_Ar2 (+ V1_index (a_Ar1 V0_index)))))
+												(* (leafLength leaf_c) (+ V1_index (a_Ar1 V0_index)))
+												(* (leafLength leaf_d) V0_index)
+												R_index
+											)
+										)
+									)
+								)
+							)
+						)
+					)
+				)
+			)
+		)
+	)
+)
+(assert (= (leafSat leaf_aPlus) leaf_aPlus_Sat))
+
+
+;/////leaf_b////
+(declare-const leaf_b_Char Char)
+(assert (= leaf_b_Char _b_))
+(assert (= (leafLength leaf_b) 1))
+(define-fun leaf_b_Sat () Bool
+	(forall ((V0_index Int))
+		(=>
+			(and
+				(>= V0_index 0)
+				(< V0_index (s_Ar0 0))
+			)
+			(forall ((V1_index Int))
+				(=>
+					(and
+						(>= V1_index 0)
+						(< V1_index (s_Ar1 V0_index))
+					)
+					(forall ((V2_index Int))
+						(=>
+							(and
+								(>= V2_index 0)
+								(< V2_index (s_Ar2 V1_index))
+							)
+							;now we have all the combinations of valid indices in our hand
+							(= leaf_b_Char 
+								(charOf 
+									inputString
+									(+
+										patternBegin			;NOTICE: because 'a' happens before 'b' on the same level as 'b', we add 1 to the V2_index (that level), 
+																;when considering how many 'a's to count.  This pattern applies at all levels, for branches as well
+																;that are on the same level as a leaf, see notice in leaf_c below
+										(leafLength leaf_x)
+										(* (leafLength leaf_aPlus) (a_Ar3 (+ 1 V2_index (a_Ar2 (+ V1_index (a_Ar1 V0_index))))))
+										(* (leafLength leaf_b) (+  V2_index (a_Ar2 (+ V1_index (a_Ar1 V0_index)))))
+										(* (leafLength leaf_c) (+ V1_index (a_Ar1 V0_index)))
+										(* (leafLength leaf_d) V0_index)
+									)
+								)
+							)
+						)
+					)
+				)
+			)
+		)
+	)
+)
+(assert (= (leafSat leaf_b) leaf_b_Sat))
+
+;/////leaf_c////
+(declare-const leaf_c_Char Char)
+(assert (= leaf_c_Char _c_))
+(assert (= (leafLength leaf_c) 1))
+(define-fun leaf_c_Sat () Bool
+	(forall ((V0_index Int))
+		(=>
+			(and
+				(>= V0_index 0)
+				(< V0_index (s_Ar0 0))
+			)
+			(forall ((V1_index Int))
+				(=>
+					(and
+						(>= V1_index 0)
+						(< V1_index (s_Ar1 V0_index))
+					)
+					;now we have all the combinations of valid indices in our hand
+					(= leaf_c_Char 
+						(charOf 
+							inputString
+							(+
+								patternBegin			;NOTICE: again, since 'a' and 'b' happen before 'c' on the V1 level, we add 1 to the V1_index
+														;when computing how many groups are coming before 'c'.
+								(leafLength leaf_x)
+								(* (leafLength leaf_aPlus) (a_Ar3 (a_Ar2 (+ 1 V1_index (a_Ar1 V0_index)))));
+								(* (leafLength leaf_b) (a_Ar2 (+ 1 V1_index (a_Ar1 V0_index))))
+								(* (leafLength leaf_c) (+ V1_index (a_Ar1 V0_index)))
+								(* (leafLength leaf_d) V0_index)
+							)
+						)
+					)
+				)
+			)
+		)
+	)
+)
+(assert (= (leafSat leaf_c) leaf_c_Sat))
+
+;/////leaf_d////
+(declare-const leaf_d_Char Char)
+(assert (= leaf_d_Char _d_))
+(assert (= (leafLength leaf_d) 1))
+(define-fun leaf_d_Sat () Bool
+	(forall ((V0_index Int))
+		(=>
+			(and
+				(>= V0_index 0)
+				(< V0_index (s_Ar0 0))
+			)
+			(= leaf_d_Char 
+				(charOf 
+					inputString
+					(+
+						patternBegin
+						(leafLength leaf_x)
+						(* (leafLength leaf_aPlus) (a_Ar3 (a_Ar2 (a_Ar1 (+ 1 V0_index)))));
+						(* (leafLength leaf_b) (a_Ar2 (a_Ar1 (+ 1 V0_index))))
+						(* (leafLength leaf_c) (a_Ar1 (+ 1 V0_index)))
+						(* (leafLength leaf_d) V0_index)
+					)
+				)
+			)
+		)
+	)
+)
+(assert (= (leafSat leaf_d) leaf_d_Sat))
+
+;/////leaf_e////
+(declare-const leaf_e_Char Char)
+(assert (= leaf_e_Char _e_))
+(assert (= (leafLength leaf_e) 1))
+(define-fun leaf_e_Sat () Bool
+	(= 
+		(charOf 
+			inputString 
+			(+ 
+				patternBegin
+				(leafLength leaf_x)
+				(* (leafLength leaf_aPlus) (a_Ar3 (a_Ar2 (a_Ar1 (s_Ar0 0)))))
+				(* (leafLength leaf_b) (a_Ar2 (a_Ar1 (s_Ar0 0))))
+				(* (leafLength leaf_c) (a_Ar1 (s_Ar0 0))) 
+				(* (leafLength leaf_d) (s_Ar0 0))
+			)
+		) 
+		leaf_e_Char
+	)
+)
+(assert (= (leafSat leaf_e) leaf_e_Sat))
+
+
+
+;//////////////////////////Solve///////////////////////////////
+
+
+;the is the top-level assertion: all the leaves have to be satisfied
+(assert 
+	(and
+		(leafSat leaf_x)
+		(leafSat leaf_aPlus)
+		(leafSat leaf_b)
+		(leafSat leaf_c)
+		(leafSat leaf_d)
+		(leafSat leaf_e)
+	)
+)
+(push)
+
+
+;1234567890xaaaababcaabcdezzzzzzz
+;this inputString should satisfy
+(assert (= (charOf inputString 0) _1_ ))
+(assert (= (charOf inputString 1) _2_ ))
+(assert (= (charOf inputString 2) _3_ ))
+(assert (= (charOf inputString 3) _4_ ))
+(assert (= (charOf inputString 4) _5_ ))
+(assert (= (charOf inputString 5) _6_ ))
+(assert (= (charOf inputString 6) _7_ ))
+(assert (= (charOf inputString 7) _8_ ))
+(assert (= (charOf inputString 8) _9_ ))
+(assert (= (charOf inputString 9) _0_ ))
+(assert (= (charOf inputString 10) _x_ ))
+(assert (= (charOf inputString 11) _a_ ))
+(assert (= (charOf inputString 12) _a_ ))
+(assert (= (charOf inputString 13) _a_ ))
+(assert (= (charOf inputString 14) _a_ ))
+(assert (= (charOf inputString 15) _b_ ))
+(assert (= (charOf inputString 16) _a_ ))
+(assert (= (charOf inputString 17) _b_ ))
+(assert (= (charOf inputString 18) _c_ ))
+(assert (= (charOf inputString 19) _a_ ))
+(assert (= (charOf inputString 20) _a_ ))
+(assert (= (charOf inputString 21) _b_ ))
+(assert (= (charOf inputString 22) _c_ ))
+(assert (= (charOf inputString 23) _d_ ))
+(assert (= (charOf inputString 24) _e_ ))
+(assert (= (charOf inputString 25) _z_ ))
+(assert (= (charOf inputString 26) _z_ ))
+(assert (= (charOf inputString 27) _z_ ))
+(assert (= (charOf inputString 28) _z_ ))
+(assert (= (charOf inputString 29) _z_ ))
+(assert (= (charOf inputString 30) _z_ ))
+(assert (= (charOf inputString 31) _z_ ))
+(assert (= (length inputString) 32))
+
+(check-sat)
+(get-value (patternBegin))
+(get-value (Ar0_0))
+(get-value (Ar0_1))
+(get-value (Ar0_2))
+(get-value (Ar0_3))
+(get-value (Ar0_4))
+(get-value (Ar1_0))
+(get-value (Ar1_1))
+(get-value (Ar1_2))
+(get-value (Ar1_3))
+(get-value (Ar1_4))
+(get-value (Ar2_0))
+(get-value (Ar2_1))
+(get-value (Ar2_2))
+(get-value (Ar2_3))
+(get-value (Ar2_4))
+(get-value (Ar3_0))
+(get-value (Ar3_1))
+(get-value (Ar3_2))
+(get-value (Ar3_3))
+(get-value (Ar3_4))
+
+(exit)

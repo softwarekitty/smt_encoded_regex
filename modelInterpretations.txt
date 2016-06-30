@@ -1,0 +1,73 @@
+((patternBegin 0))
+((ArN 3)) OK
+
+((Ar0_0 1,1,0))OK
+((Ar1_0 0,0,1))OK
+
+((Ar2_0 5)) ?????
+
+((Ar3_0 1,1,0,1,0)) ?????
+((Ar4_0 0,0,1,0,1)) ?????
+
+((Ar5_0 1,4)) OK
+((Ar6_0 1,1,2)): gx,gx,gxgx
+((Ar7_0 2,1,0,1)): jxjxw, jxw
+((Ar8_0 2,4,1,1,1)) OK
+
+((Ar9_0 2,1,1,1,0,0)): hh,h,h,h
+((Ar10_0 2,1,1,0)): kk,k,k
+
+;mnnpmnnnnmnmnmnpghhghjkkjkwghghjkwq
+
+;^((mn+)+p|((gh+)+|(jk+)+w)+q)+
+
+;mnnpmnnnnmnmnmnpghhghjkkjkwghghjkwqmnnmnpjkjkwjkwqghhhghq
+;   0           1                  2     3        4      5
+;mnnp            ghhgh      ghgh    mnnmnp         ghhhghq
+;    mnnnnmnmnmnp     jkkjkw    jkwq      jkjkwjkwq
+;correct model:
+;^((mn+)+p|((gh+)+|(jk+)+w)+q)+
+; ___________N0_K_____________+
+;  __Ch0__
+;          _______Ch1________
+;           ______N1_Ar____+
+;           _Ch2__ __Ch3___
+;  _N2__+
+;           _N3__+
+;                  _N4__+
+;Ch0_Ar = {1,1,0,1,0,0,D,D,D,D,D} Ar0
+;Ch1_Ar = {0,0,1,0,1,1,D,D,D,D,D} Ar1
+
+;N1_Ar  = {4,2,1,D,D,D,D,D,D,D,D} Ar2
+;Ch2_Ar = {1,0,1,0,0,0,1,D,D,D,D} Ar3
+;Ch3_Ar = {0,1,0,1,1,1,0,D,D,D,D} Ar4
+;N2_Ar  = {1,4,2,D,D,D,D,D,D,D,D} Ar5
+;N3_Ar  = {2,2,2,D,D,D,D,D,D,D,D} Ar6
+;N4_Ar  = {2,1,2,1,D,D,D,D,D,D,D} Ar7
+
+;nPlus_Ar={2,4,1,1,1,2,1,D,D,D,D} Ar8
+;hPlus_Ar={2,1,1,1,3,1,D,D,D,D,D} Ar9
+;kPlus_Ar={2,1,1,1,1,1,D,D,D,D,D} Ar10
+
+~/G/I/pattern ❯❯❯ time z3 -smt2 pattern_nested_or.smt
+sat
+((patternBegin 0))
+((ArN 6)) OK
+((Ar0_0 1,1,0,1,0,0)) OK
+((Ar1_0 0,0,1,0,1,1)) OK
+
+((Ar2_0 6,2,2)) - z3 chose 6,2,2 instead of 4,2,1 but then uses all 1's in Ar6 instead of all 2's
+((Ar3_0 1,1,0,1,1,0,0))??? - 0,1,1
+((Ar4_0 0,0,1,0,0,1,1))??? - 1,0,0
+this means gx,gx,jxw,gx,gx,jxw,jxw,jxw,gx,gx
+
+((Ar5_0 1,4,2)) OK
+((Ar6_0 1,1,1)) - can only be 1,1,1
+
+((Ar7_0 2,1,2,1)) OK
+
+((Ar8_0 2,4,1,1,1,2,1)) OK
+
+((Ar9_0 2,1,1,1,3,1)) OK
+((Ar10_0 2,1,1,1,1,1)) OK
+z3 -smt2 pattern_nested_or.smt  5364.33s user 2.99s system 99% cpu 1:29:29.07 total
